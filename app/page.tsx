@@ -37,14 +37,14 @@ const Portfolio = () => {
         company: "Kafsco.com",
         role: "Frontend Developer",
         period: "June 2024 - July 2024",
-        desc: "Developed custom web solutions using Swiper.js and Next.js. Engineered 'Instagram-story' like components for web engagement.",
+        desc: "Developed custom web solutions using Swiper.js and Next.js. Engineered 'Instagram Story' like components for web engagement.",
         bg: "https://res.cloudinary.com/dcpgejete/image/upload/v1764326167/OrganizerLogin_valrek.png"
       },
       {
         company: "MLSA KIIT",
         role: "Web Developer",
         period: "March 2023 - Present",
-        desc: "Built scalable web applications for events, improving engagement by 40%. Organized workshops focused on AI.",
+        desc: "Built scalable web applications for events, organized and participated in tech events and workshops.",
         bg: "https://res.cloudinary.com/dcpgejete/image/upload/v1764326486/members_wpnefs.webp"
       }
     ],
@@ -101,7 +101,7 @@ const Portfolio = () => {
   useEffect(() => {
     const onScroll = () => {
       const y = window.scrollY || document.documentElement.scrollTop || 0;
-      setTitleScrolled(y > 10); // "a little" scroll threshold
+      setTitleScrolled(y > 1); // "a little" scroll threshold
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
@@ -209,7 +209,7 @@ const Portfolio = () => {
         src="https://res.cloudinary.com/dcpgejete/image/upload/v1764315007/ChatGPT_Image_Nov_28_2025_12_58_34_PM_amsneo.png"
         alt="Background"
         aria-hidden={true}
-        className="absolute top-18 right-0 w-[350px] sm:w-[500px] object-cover z-10 pointer-events-none will-change-transform opacity-65 sm:opacity-100"
+        className="absolute top-18 right-0 w-[350px] sm:w-[500px] object-cover z-10 pointer-events-none will-change-transform opacity-65 sm:opacity-75"
       />
       {/* BACKGROUND BLOB (Burnt Orange) */}
       <div 
@@ -287,10 +287,11 @@ const Portfolio = () => {
 
   {/* EXPERIENCE */}
       <section id="experience" className="py-24 sm:py-32 px-6 md:px-20 bg-[#F5F5F0] relative z-10 mt-32">
-        <div className="reveal max-w-4xl mx-auto">
+
+        <div className="reveal relative z-10 max-w-4xl mx-auto">
           <h2 className="font-serif text-4xl mb-16 text-center md:text-left text-[#1c1917]">Experience</h2>
           
-          <div className="space-y-0">
+          <div className="space-y-6 md:space-y-8">
             {DATA.experience.map((exp, i) => (
               <div
                 key={i}
@@ -317,7 +318,7 @@ const Portfolio = () => {
                     <p className="text-sm font-medium uppercase tracking-widest text-black mb-2">{exp.role}</p>
                   </div>
                   <div className="col-span-8">
-                    <p className="text-black font-light leading-relaxed max-w-xl group-hover:text-[#1c1917] transition-colors">
+                    <p className="text-black leading-relaxed max-w-xl group-hover:text-[#1c1917] transition-colors">
                       {exp.desc}
                     </p>
                   </div>
