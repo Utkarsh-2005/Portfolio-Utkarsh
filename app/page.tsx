@@ -256,7 +256,7 @@ const Portfolio = () => {
             resume
             <ExternalLink className="w-4 h-4" />
           </a>
-          <button onClick={() => scrollTo('contact')} className="text-sm font-mono uppercase mt-1">Menu</button>
+          <button onClick={() => scrollTo('contact')} className="text-sm font-mono">menu</button>
         </div>
       </nav>
 
@@ -275,7 +275,7 @@ const Portfolio = () => {
               {DATA.bio}
             </p>
             <div 
-              onClick={() => scrollTo('work')}
+              onClick={() => scrollTo('experience')}
               className="mt-8 md:mt-0 flex items-center gap-2 text-xs font-mono uppercase tracking-widest cursor-pointer hover:text-[#ea580c] transition-colors group text-[#1c1917]/80"
             >
               Scroll to Explore 
