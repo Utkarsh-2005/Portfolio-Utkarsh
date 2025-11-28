@@ -295,7 +295,7 @@ const Portfolio = () => {
             {DATA.experience.map((exp, i) => (
               <div
                 key={i}
-                className="group relative py-12 md:py-16 hover:bg-[#1c1917]/5 transition-colors duration-500 px-4 md:px-8  border-t border-[#1c1917]/10"
+                className="group relative py-12 md:py-16 transition-colors duration-500 px-4 md:px-8 border-t border-[#1c1917]/10 overflow-hidden"
                 style={{
                   backgroundImage:
                     `linear-gradient(rgba(245,245,240,0.72), rgba(245,245,240,0.82)), url('${exp.bg || "https://via.placeholder.com/1200x800?text=Experience+BG"}')`,
@@ -304,11 +304,13 @@ const Portfolio = () => {
                   backgroundRepeat: 'no-repeat',
                 }}
               >
+                {/* Hover overlay to increase perceived opacity */}
+                <div className="absolute inset-0 bg-[#1c1917]/5 group-hover:bg-[#1c1917]/12 transition-colors duration-500" />
                 <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 relative z-10">
-                  <h3 className="text-2xl md:text-4xl font-serif italic group-hover:text-[#ea580c] transition-colors text-[#1c1917]/80">
+                  <h3 className="text-2xl md:text-4xl font-serif italic group-hover:text-[#9c5b3d] transition-colors text-[#1c1917]/80">
                     {exp.company}
                   </h3>
-                  <span className="font-mono text-xs md:text-sm text-[#ea580c] opacity-60 group-hover:opacity-100 font-medium">
+                  <span className="font-mono text-xs md:text-sm text-[#9c5b3d] opacity-60 group-hover:opacity-100 font-medium">
                     {exp.period}
                   </span>
                 </div>
