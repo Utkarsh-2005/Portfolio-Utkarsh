@@ -426,7 +426,7 @@ const Portfolio = () => {
             {/* <span className="font-mono text-xs opacity-40 uppercase block mb-4">Meta</span> */}
             <p className="text-sm opacity-40 mt-12">© 2025 Utkarsh Jha</p>
             <p className="text-sm opacity-40">Delhi, IN</p>
-            <p className="text-xs opacity-100 mt-4">Designed with <Heart className="w-5 h-5 text-[#ea580c] fill-[#ea580c] inline-block opacity-100" /></p>
+            <p className="text-xs opacity-100 mt-4">Designed with <Heart className="w-5 h-5 text-[#ef8752] fill-[#ef8752] inline-block opacity-100" /></p>
           </div>
         </div>
       </footer>
