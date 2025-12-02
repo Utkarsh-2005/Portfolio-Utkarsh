@@ -209,7 +209,7 @@ const Portfolio = () => {
         src="https://res.cloudinary.com/dcpgejete/image/upload/v1764315007/ChatGPT_Image_Nov_28_2025_12_58_34_PM_amsneo.png"
         alt="Background"
         aria-hidden={true}
-        className="absolute top-18 right-0 w-[350px] sm:w-[500px] object-cover z-10 pointer-events-none will-change-transform opacity-65 sm:opacity-75"
+        className="absolute top-18 sm:top-40 lg:top-18 right-0 w-[350px] sm:w-[39vw] object-cover z-10 pointer-events-none will-change-transform opacity-65 sm:opacity-75"
       />
       {/* BACKGROUND BLOB (Burnt Orange) */}
       <div 
@@ -261,12 +261,12 @@ const Portfolio = () => {
       </nav>
 
       {/* HERO SECTION */}
-      <section id="home" className="relative my-20 sm:min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20">
+      <section id="home" className="relative my-20 flex flex-col justify-center px-6 md:px-20 pt-20">
         <div className="z-10 max-w-5xl reveal reveal-active mt-[2vh]">
           <p className="font-mono text-[#531d00] sm:text-[#ea580c] text-xs md:text-sm mb-6 tracking-widest uppercase font-medium">
             Based in {DATA.location}
           </p>
-          <h1 className="font-serif text-6xl md:text-[9rem] leading-[0.9] tracking-tight mb-8 text-[#1c1917]">
+          <h1 className="font-serif text-6xl md:text-[7rem] lg:text-[7rem] leading-[0.9] tracking-tight mb-8 text-[#1c1917]">
             <span className="block hover:ml-4 transition-all duration-500 cursor-default">Creative</span>
             <span className={`block ${titleScrolled ? 'text-[#1c1917]' : 'text-[#1c1917]/20'} hover:ml-4 transition-all duration-500 cursor-default`}>Technologist</span>
           </h1>
@@ -390,7 +390,7 @@ const Portfolio = () => {
 
 
       {/* FOOTER */}
-      <footer id="contact" className="min-h-[80vh] flex flex-col justify-between px-6 md:px-20 py-20 bg-[#FDFBF7] relative z-10">
+      <footer id="contact" className="min-h-[60vh] flex flex-col justify-between px-6 md:px-20 py-20 bg-[#FDFBF7] relative z-10">
         <div className="reveal">
           <p className="font-mono text-xs uppercase tracking-widest mb-6 text-[#ea580c]">What's Next?</p>
           <h2 className="font-serif text-5xl md:text-[7rem] leading-[0.9] tracking-tight text-[#1c1917]">
@@ -403,7 +403,7 @@ const Portfolio = () => {
             <span className="font-mono text-xs opacity-40 uppercase block mb-4">Contact</span>
             <a 
               href={`mailto:${DATA.email}`} 
-              className="text-2xl md:text-3xl hover:text-[#ea580c] transition-colors flex items-center gap-2 group"
+              className="text-2xl lg:text-3xl hover:text-[#ea580c] transition-colors flex items-center gap-2 group"
             >
               {DATA.email}
               <ArrowUpRight className="w-5 h-5 opacity-0 -translate-y-2 translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all text-[#ea580c]" />
