@@ -246,7 +246,7 @@ const Portfolio = () => {
             </button>
           ))}
         </div>
-        <div className="md:hidden flex w-[30vw] justify-between">
+        <div className="md:hidden flex w-[40%] justify-between">
               <a
             href={DATA.resumeUrl}
             target="_blank"
@@ -256,7 +256,7 @@ const Portfolio = () => {
             resume
             <ExternalLink className="w-4 h-4" />
           </a>
-          <button onClick={() => scrollTo('contact')} className="text-sm font-mono">menu</button>
+          <button onClick={() => scrollTo('contact')} className="text-sm font-mono pl-[2vw]">menu</button>
         </div>
       </nav>
 
@@ -266,7 +266,7 @@ const Portfolio = () => {
           <p className="font-mono text-[#531d00] sm:text-[#ea580c] text-xs md:text-sm mb-6 tracking-widest uppercase font-medium">
             Based in {DATA.location}
           </p>
-          <h1 className="font-serif text-6xl md:text-[7rem] lg:text-[7rem] leading-[0.9] tracking-tight mb-8 text-[#1c1917]">
+          <h1 className="font-serif text-[15vw] sm:text-6xl md:text-[7rem] lg:text-[7rem] leading-[0.9] tracking-tight mb-8 text-[#1c1917]">
             <span className="block hover:ml-4 transition-all duration-500 cursor-default">Creative</span>
             <span className={`block ${titleScrolled ? 'text-[#1c1917]' : 'text-[#1c1917]/20'} hover:ml-4 transition-all duration-500 cursor-default`}>Technologist</span>
           </h1>
@@ -286,7 +286,7 @@ const Portfolio = () => {
       </section>
 
   {/* EXPERIENCE */}
-      <section id="experience" className="py-24 sm:py-32 px-6 md:px-20 bg-[#F5F5F0] relative z-10 mt-32">
+      <section id="experience" className="py-24 sm:py-32 px-6 md:px-20 bg-[#F5F5F0] relative z-10 sm:mt-32">
 
         <div className="reveal relative z-10 max-w-4xl mx-auto">
           <h2 className="font-serif text-4xl mb-16 text-center md:text-left text-[#1c1917]">Experience</h2>
@@ -369,7 +369,7 @@ const Portfolio = () => {
 
               <div className="flex justify-between items-start border-t border-[#1c1917]/10 pt-4">
                 <div>
-                  <h3 className="text-3xl font-medium mb-2 text-[#1c1917] group-hover:text-[#ea580c] transition-colors">{project.name}</h3>
+                  <h3 className="text-2xl sm:text-3xl font-medium mb-2 text-[#1c1917] group-hover:text-[#ea580c] transition-colors">{project.name}</h3>
                   <p className="text-[#1c1917]/60 text-sm max-w-xs leading-relaxed">{project.desc}</p>
                 </div>
                 <div className="text-right">
@@ -403,7 +403,7 @@ const Portfolio = () => {
             <span className="font-mono text-xs opacity-40 uppercase block mb-4">Contact</span>
             <a 
               href={`mailto:${DATA.email}`} 
-              className="text-2xl lg:text-3xl hover:text-[#ea580c] transition-colors flex items-center gap-2 group"
+              className="text-[5vw] sm:text-2xl lg:text-3xl hover:text-[#ea580c] transition-colors flex items-center gap-2 group"
             >
               {DATA.email}
               <ArrowUpRight className="w-5 h-5 opacity-0 -translate-y-2 translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all text-[#ea580c]" />
