@@ -24,7 +24,7 @@ const Portfolio = () => {
       { name: "LinkedIn", url: "https://www.linkedin.com/in/utkarsh-jha-002b23266/" },
       { name: "Instagram", url: "https://www.instagram.com/utkarsh.905/" }
     ],
-    resumeUrl: "https://drive.google.com/file/d/1AUJ0oSAvox-J5SlpvzAjdTmd0gyoIlN5/view?usp=sharing",
+    resumeUrl: "https://drive.google.com/file/d/17VLdoZZdD5YXU8nIvRCF-qyR-JdENzB1/view?usp=sharing",
     experience: [
       {
         company: "Pehchaan.me",
